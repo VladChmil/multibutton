@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>Button tracking test</p>
+    
+    <button onclick="redirectToURL('https://lzkjt.rdtk.io/646dfd578deac600011a1800')">Button 1</button>
+    <button onclick="redirectToURL('https://lzkjt.rdtk.io/646dfdb78deac600011a1802')">Button 2</button>
+    <button onclick="redirectToURL('https://lzkjt.rdtk.io/646dfe2046ee780001cf4dbf')">Button 3</button>
+
+    <script>
+        function redirectToURL(url) {
+            var params = new URLSearchParams(window.location.search);
+            var queryParams = params.toString();
+            window.location.href = url + '?' + queryParams;
+        }
+    </script>
+</body>
+</html>
